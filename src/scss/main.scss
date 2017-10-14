@@ -1,9 +1,15 @@
-$color: #333;
+$color: #456789;
 
-body {
+body, html {
   background-color: $color;
+  height: 100%;
+  margin: 0;
 }
 
-h1 {
-  color: lighten($color, 50%);
+.full-image-background {
+    background-image: url("http://lorempixel.com/400/400/");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
