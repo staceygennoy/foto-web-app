@@ -6,10 +6,15 @@ body, html {
   margin: 0;
 }
 
-.full-image-background {
+#full-image-background {
+  > div {
     background-image: url("http://lorempixel.com/400/400/");
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    &.hide {
+      display: none;
+    }
+  }
 }
