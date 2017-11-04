@@ -2,6 +2,6 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "sourceMap": true,
-    "target": "es2015"
+    "target": "es6"
   }
 }
