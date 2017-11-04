@@ -7,8 +7,7 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js']
   },
   entry: {
-    app: './scripts/app.ts',
-    vendor: './scripts/vendor.ts'
+    app: './scripts/app.ts'
   },
   output: {
     path: path.resolve('./dist'),
