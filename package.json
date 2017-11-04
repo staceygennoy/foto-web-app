@@ -6,8 +6,10 @@
   "scripts": {
     "start": "npm run serve:dev",
     "clean": "npm cache verify && rimraf -- dist",
+    "prod": "npm run serve:prod",
     "serve:dev": "webpack-dev-server --hot",
-    "build": " npm run clean && webpack"
+    "serve:prod": "npm run build:prod && http-server -p 3000 -s ./dist",
+    "build:prod": " npm run clean && NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
