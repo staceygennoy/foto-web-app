@@ -8,7 +8,7 @@
     "clean": "npm cache verify && rimraf -- dist",
     "prod": "npm run serve:prod",
     "serve:dev": "webpack-dev-server --hot",
-    "serve:prod": "npm run build:prod && http-server -p 3000 -s ./dist",
+    "serve:prod": "npm run build:prod && http-server ./dist -p 3000 -s",
     "build:prod": " npm run clean && NODE_ENV=production webpack"
   },
   "repository": {
@@ -37,6 +37,7 @@
     "webpack-dev-server": "^2.9.1"
   },
   "dependencies": {
+    "http-server": "^0.10.0",
     "rxjs": "^5.5.0"
   }
 }
