@@ -5,6 +5,6 @@ export class Constants {
   public static IMAGE_PATH = '/api/image/random';
 
   public static get API_URL() {
-    return 'http://retropie.local:3001';
+    return 'http://raspberrypi.local:3001';
   }
 }

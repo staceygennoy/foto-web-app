@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs';
+import { timer } from 'rxjs';
 import { Constants } from './constants';
 
 export class Main {
@@ -15,7 +15,7 @@ export class Main {
 
     this.createImageElements();
 
-    Observable.timer(0, (Constants.TIME_OUT / 2)).subscribe(x => {
+    timer(0, (Constants.TIME_OUT / 2)).subscribe(x => {
       (x % 2 === 0) ? this.setBackgroundImage() : this.swapImages();
     });
   }
